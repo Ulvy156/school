@@ -22,7 +22,7 @@ class UniversityController extends Controller
     {
         try {
             $request->validate([
-                "name" => "required|string"
+                "name" => "required|string",
             ]);
             $university = new University();
             $university->name = $request->name;
